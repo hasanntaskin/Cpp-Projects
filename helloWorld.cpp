@@ -1,6 +1,28 @@
 #include<iostream> 
 
 
+namespace first{
+    int x = 1;
+}
+
+namespace second{
+    int x = 2;
+}
+
+int main(){
+    //namespace = provides a solution preventing name conflicts
+    //            in large projects. Each entitiy needs a uniqe name. 
+    //            A namespaces allows for identically named entities 
+    //            as long as the namespaces are different
+
+    using namespace first;
+    int x = 0;
+    std::cout<< first::x <<std::endl;
+
+    return 0;
+}
+
+
 int main2(){
     //The const keyword specifies that a variable's value is constant
     // tells the compiler to prevent anything from modifyng it 
