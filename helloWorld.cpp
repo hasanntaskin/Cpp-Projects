@@ -1,5 +1,21 @@
 #include<iostream> 
 
+
+int main2(){
+    //The const keyword specifies that a variable's value is constant
+    // tells the compiler to prevent anything from modifyng it 
+    //(read only)
+    //java final keyword
+     
+    const double PI = 3.14159;
+    double radius = 10;
+    double circumference = 2 * PI * radius; 
+
+    std::cout << circumference << " cm" <<'\n';
+
+    return 0;
+}
+
 int main1(){
     std::cout<<"Hello world" <<std::endl; 
     std::cout<<"I like pizza!" << '\n';
@@ -21,7 +37,7 @@ int main1(){
     std::cout<< "------------------" <<std::endl;
     std::cout<<'\n';
 
-    int days = 7.5;
+    int days = 7;
     std::cout<< days << std::endl;
 
     //double datatype
